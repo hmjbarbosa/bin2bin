@@ -1,0 +1,54 @@
+DESCRIPTION
+
+This piece of code is for converting a binary file into a binary file
+while changing from big/little endianess, or data type between char,
+short, int, long, float, double or long double.
+       
+SYNOPSIS
+       bin2bin [options]
+
+OPTIONS
+       -i input_file 
+
+               Opens file input_file for input
+
+       -iend le|be 
+
+               Selects endiness of input file: le for little_endian,
+               or be for big_endian
+
+       -iprec si1|si2|si4|ui1|ui2|ui4|r4|r8 
+
+               Selects the precision of input data. (s|u) is for
+               signed vs unsigned. (i|r is for integer or
+               float. (1|2|4|8) is the number of bytes. Standard
+               32-bit float uses 4-bytes, while double precision, or
+               64-bit float, uses 8-byte.
+
+       -o output_file 
+
+               Open file output_file for output
+
+       -oend le|be 
+
+               Select endiness of output file: le for little_endian,
+               or be for big_endian
+
+       -oprec si1|si2|si4|ui1|ui2|ui4|r4|r8 
+
+               Selects the precision of output data. (s|u) is for
+               signed vs unsigned. (i|r) is for integer or
+               float. (1|2|4|8) is the number of bytes. Standard
+               32-bit float uses 4-bytes, while double precision, or
+               64-bit float, uses 8-byte.
+
+AUTHOR
+
+        Henrique Barbosa (hmjbarbosa [at] gmail [dot] com)
+
+COPYRIGHT 
+
+        This sofLicense is distributed under GNU GPL version 3 or
+        later <http://gnu.org/licenses/gpl.html>.  This is free
+        software: you are free to change and redistribute it.  There
+        is NO WARRANTY, to the extent permitted by law.
